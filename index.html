@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio - Lutfi Sakhi Winnardi</title>
 
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,11 +18,15 @@
                 <li><a href="#tentang">Tentang</a></li>
                 <li><a href="#keahlian">Keahlian</a></li>
                 <li><a href="#proyek">Proyek</a></li>
+                <li><a href="#sosial">Sosial</a></li>
+                <li><a href="#komentar">Komentar</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
+
+        <img src="profile.jpeg" alt="Foto Profil Lutfi" class="hero-img">
 
         <div class="hero-text">
             <h1>Halo, Saya Lutfi Sakhi Winnardi</h1>
@@ -58,7 +62,7 @@
 
     <section class="container" id="keahlian">
 
-        <h2 class="section-title">hobi saya</h2>
+        <h2 class="section-title">Hobi Saya</h2>
 
         <div class="skills-grid">
             <div class="skill-item">main dengan teman</div>
@@ -123,7 +127,7 @@
 
     <div class="skills-grid">
 
-        <a href="https://instagram.com/lutfi.sw9" target="_blank" style="text-decoration:none;color:inherit;">
+        <a href="https://instagram.com/lutfi.sw9" target="_blank" rel="noopener noreferrer" class="social-link">
             <div class="skill-item">
                  Instagram
                 <br>
@@ -131,7 +135,7 @@
             </div>
         </a>
 
-        <a href="https://www.tiktok.com/@kumpay" target="_blank" style="text-decoration:none;color:inherit;">
+        <a href="https://www.tiktok.com/@kumpay" target="_blank" rel="noopener noreferrer" class="social-link">
             <div class="skill-item">
                  TikTok
                 <br>
@@ -139,7 +143,7 @@
             </div>
         </a>
 
-        <a href="https://wa.me/628814071108" target="_blank" style="text-decoration:none;color:inherit;">
+        <a href="https://wa.me/628814071108" target="_blank" rel="noopener noreferrer" class="social-link">
             <div class="skill-item">
                  WhatsApp
                 <br>
@@ -151,12 +155,67 @@
 
 </section>
 
+<!-- Section komentar: tampilannya dibuat dengan HTML dan CSS tanpa JavaScript. -->
+<section class="container" id="komentar">
+
+    <h2 class="section-title">Komentar</h2>
+
+    <div class="comments-grid">
+
+        <div class="comment-card">
+            <h3>Tinggalkan Komentar</h3>
+            <p class="comment-note">
+                Tulis pendapat atau saran kamu tentang portofolio ini.
+            </p>
+
+            <!-- Form ini adalah tampilan frontend; penyimpanan membutuhkan backend. -->
+            <form class="comment-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama kamu" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Komentar</label>
+                    <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis komentar kamu di sini..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Kirim Komentar</button>
+            </form>
+
+            <p class="comment-hint">
+                Catatan: HTML dan CSS hanya membuat form. Agar komentar tersimpan,
+                nanti perlu backend atau layanan form.
+            </p>
+        </div>
+
+        <div class="comment-card">
+            <h3>Komentar Pengunjung</h3>
+            <p class="comment-note">
+                Komentar yang sudah masuk akan ditampilkan di area ini.
+            </p>
+
+            <div class="comment-empty">
+                <span class="comment-empty-icon">💬</span>
+                <p>Belum ada komentar baru.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
 <footer>
     <p>
         &copy; 2026 Lutfi Sakhi Winnardi - Portofolio Siswa PPLG
     </p>
 
-    <p style="margin-top:10px;">
+    <p>
         Instagram : @lutfi.sw9 |
         TikTok : @cyrosss7 |
         WhatsApp : 08814071108
